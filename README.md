@@ -79,7 +79,7 @@ python visualize.py
 
 <div id="-türkçe"></div>
 
-Türkçe
+###Türkçe
 📖 Proje Hakkında
 Async Crypto Sentinel, Python ile geliştirilmiş yüksek performanslı bir kripto para takip botudur. Geleneksel botların aksine, Asenkron Programlama (Asyncio & Aiohttp) mimarisini kullanarak sistem kaynaklarını tüketmeden gerçek zamanlı piyasa takibi yapar.
 
