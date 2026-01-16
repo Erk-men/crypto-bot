@@ -143,10 +143,17 @@ python visualize.py
 📂 Directory Structure (Proje Yapısı)
 async-crypto-bot/
 ├── 📄 main.py           # Entry point & Async Logic (Ana Bot)
+
 ├── 📄 analyzer.py       # Data Analysis Module (SMA Calculation)
+
 ├── 📄 db_manager.py     # Database Operations (SQLite)
+
 ├── 📄 visualize.py      # Data Visualization (Matplotlib)
+
 ├── 📄 .env              # Configuration Variables (Gizli Ayarlar)
+
 ├── 📄 .gitignore        # Git Exclusions
+
 ├── 📄 requirements.txt  # Dependencies
+
 └── 📄 README.md         # Documentation
