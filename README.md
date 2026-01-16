@@ -70,5 +70,83 @@ It features a built-in **Financial Analysis Engine** that calculates Simple Movi
 
 ### ▶️ Usage
 **To start the bot:**
-```bash
+```bash```
 python main.py
+
+**To visualize the data (Graph):**
+```bash```
+python visualize.py
+
+<div id="-türkçe"></div>
+
+Türkçe
+📖 Proje Hakkında
+Async Crypto Sentinel, Python ile geliştirilmiş yüksek performanslı bir kripto para takip botudur. Geleneksel botların aksine, Asenkron Programlama (Asyncio & Aiohttp) mimarisini kullanarak sistem kaynaklarını tüketmeden gerçek zamanlı piyasa takibi yapar.
+
+İçerisindeki Finansal Analiz Motoru, Basit Hareketli Ortalamaları (SMA) hesaplayarak piyasa trendini (Yükseliş/Düşüş) tespit eder ve belirlediğiniz fiyatın altına inildiğinde Masaüstü Bildirimi gönderir.
+
+✨ Temel Özellikler
+⚡ Asenkron Mimari: asyncio ve aiohttp sayesinde bloklanmayan (non-blocking) veri akışı.
+
+🧠 Akıllı Analiz: Pandas kullanarak geçmiş verileri analiz eder ve trend yönünü belirler.
+
+💾 Veri Madenciliği: Tüm fiyat hareketlerini otomatik olarak SQLite veritabanına kaydeder.
+
+🔔 Anlık Bildirimler: Hedef fiyat kaçtığında plyer ile masaüstü uyarısı gönderir.
+
+📊 Görselleştirme: Toplanan verileri Matplotlib ile profesyonel grafiklere döker.
+
+📝 Profesyonel Loglama: Hata takibi ve geçmiş kayıtları için detaylı .log dosyası tutar.
+
+🛠️ Kullanılan Teknolojiler
+Çekirdek: Python 3.x, Asyncio
+
+Ağ: Aiohttp (Asenkron HTTP İstemcisi)
+
+Veri Bilimi: Pandas, Matplotlib
+
+Veritabanı: SQLite3
+
+Araçlar: Plyer (Bildirim), Python-Dotenv (Konfigürasyon)
+
+🚀 Kurulum
+Projeyi Klonlayın
+git clone [https://github.com/kullaniciadi/async-crypto-bot.git](https://github.com/kullaniciadi/async-crypto-bot.git)
+cd async-crypto-bot
+
+Sanal Ortamı Kurun (Önerilen)
+# Windows için
+python -m venv venv
+.\venv\Scripts\activate
+
+# Mac/Linux için
+python3 -m venv venv
+source venv/bin/activate
+
+Gerekli Kütüphaneleri Yükleyin
+pip install -r requirements.txt
+
+Ayarları Yapın (.env) Ana dizinde .env adında bir dosya oluşturun ve şu ayarları kendinize göre düzenleyin:
+```ini
+    CRYPTO_ID=bitcoin
+    TARGET_CURRENCY=usd
+    TARGET_PRICE=95000
+    CHECK_INTERVAL=10
+```
+▶️ Kullanım
+Botu başlatmak için:
+python main.py
+
+Grafik Raporu Almak için:
+python visualize.py
+
+📂 Directory Structure (Proje Yapısı)
+async-crypto-bot/
+├── 📄 main.py           # Entry point & Async Logic (Ana Bot)
+├── 📄 analyzer.py       # Data Analysis Module (SMA Calculation)
+├── 📄 db_manager.py     # Database Operations (SQLite)
+├── 📄 visualize.py      # Data Visualization (Matplotlib)
+├── 📄 .env              # Configuration Variables (Gizli Ayarlar)
+├── 📄 .gitignore        # Git Exclusions
+├── 📄 requirements.txt  # Dependencies
+└── 📄 README.md         # Documentation
